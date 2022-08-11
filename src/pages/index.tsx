@@ -1,14 +1,11 @@
-import type { NextPage } from "next";
-import { Button } from "@mantine/core";
+import Header1 from 'component/Header';
 
-const Home: NextPage = () => {
+function Home () {
   return (
     <>
-      <Button variant="light" size="xl">
-        test
-      </Button>
+    <Header1/>
     </>
   );
-};
+}
 
 export default Home;
