@@ -1,10 +1,10 @@
 import { Container, Grid, Space } from "@mantine/core";
-import Blog from "src/component/Blog";
-import FooterArea from "src/component/FooterArea";
-import Github from "src/component/Github";
-import HeaderArea from "src/component/Header";
-import Portfolio from "src/component/Portfolio";
-import Twitter from "src/component/Twitter";
+import Blog from "./component/Blog";
+import FooterArea from "./component/FooterArea";
+import Github from "./component/Github";
+import HeaderArea from "./component/Header";
+import Portfolio from "./component/Portfolio";
+import Twitter from "./component/Twitter";
 
 function Index() {
   return (
