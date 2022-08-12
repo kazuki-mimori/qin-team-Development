@@ -1,4 +1,11 @@
-import { Container, useMantineTheme, Text, Space, Button } from "@mantine/core";
+import {
+  Container,
+  useMantineTheme,
+  Text,
+  Space,
+  Button,
+  Group,
+} from "@mantine/core";
 
 function Twitter() {
   const theme = useMantineTheme();
@@ -47,9 +54,11 @@ function Twitter() {
             <p>2022.07.11</p>
           </div>
           <Space h="xs" />
-          <Button color="dark" radius="xl" size="md">
-            View Al
-          </Button>
+          <Group position="center">
+            <button className="bg-black text-white rounded-full py-2 px-4">
+              View on Twitter
+            </button>
+          </Group>
         </div>
       </Container>
     </>

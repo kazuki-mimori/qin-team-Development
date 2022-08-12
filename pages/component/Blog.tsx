@@ -1,6 +1,20 @@
 import { Container, Text, Space, Button } from "@mantine/core";
 
 function Blog() {
+  const BlogContent = [
+    {
+      title: "This is a header",
+      content:
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor doamet sint. Velit officia consequat duis enim velit mollit.",
+      date: "2022.07.11",
+    },
+    {
+      title: "This is a heade",
+      content:
+        "Amet minim mollit non deserunt ullamco est sit aliqua dolor doamet sint. Velit officia consequat duis enim velit mollit.",
+      date: "2022.07.11",
+    },
+  ];
   return (
     <>
       <Container my="xl">
@@ -10,42 +24,19 @@ function Blog() {
           <Space h="xl" />
           <div className=" border-b-2 divide-gray-200 ..." />
           <div className="my-6">
-            <Text className="text-1xl">This is a header</Text>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.{" "}
-            </p>
-            <p>2022.07.11</p>
+            {BlogContent.map((content: any) => {
+              return (
+                <>
+                  <Space h="xs" />
+                  <Text className="text-2xl">{content.title}</Text>
+                  <Space h="xs" />
+                  <p>{content.content}</p>
+                  <p>{content.date}</p>
+                </>
+              );
+            })}
           </div>
-          <div className="my-6">
-            <Text className="text-1xl">This is a header</Text>
-            <Space h="xs" />
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.{" "}
-            </p>
-            <p>2022.07.11</p>
-          </div>
-          <div className="my-6">
-            <Text className="text-1xl">This is a header</Text>
-            <Space h="xs" />
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.{" "}
-            </p>
-            <p>2022.07.11</p>
-          </div>
-          <div className="my-6">
-            <Text className="text-1xl">This is a header</Text>
-            <Space h="xs" />
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.{" "}
-            </p>
-            <p>2022.07.11</p>
-          </div>
-          <Space h="xs" />
-          <Button color="dark" radius="xl" size="md">
+          <Button className="" color="dark" radius="xl" size="md">
             View Al
           </Button>
         </div>

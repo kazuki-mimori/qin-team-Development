@@ -1,4 +1,4 @@
-import { Container, Text, Button, Space } from "@mantine/core";
+import { Container, Text, Button, Space, Group } from "@mantine/core";
 
 function Github() {
   return (
@@ -46,9 +46,11 @@ function Github() {
           </div>
         </div>
         <Space h="xl" />
-        <Button color="dark" radius="xl" size="md">
-          View Al
-        </Button>
+        <Group position="center">
+          <button className="bg-black text-white rounded-full py-2 px-4">
+            View on GitHub
+          </button>
+        </Group>
       </Container>
     </>
   );

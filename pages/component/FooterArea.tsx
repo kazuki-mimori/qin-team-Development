@@ -5,8 +5,8 @@ function FooterArea() {
     <>
       <div className="border-t-2 border-gray-200 p-4">
         <Group position="center">
-          <Text size="sm" color="#868E96">
-            <Space h="xl" />© 2022 Shimabu IT University
+          <Text className="my-6" size="sm" color="#868E96">
+            © 2022 Shimabu IT University
           </Text>
         </Group>
       </div>
