@@ -66,10 +66,10 @@ function HeaderArea() {
             size="sm"
           />
         </Container>
-        <div className="bg-pink-600">
+        <div className="bg-pink-600  ">
           <Container my="sm">
             <Grid>
-              <Grid.Col xs={8}>
+              <Grid.Col xs={10}>
                 <Space h="xl" />
                 <Text sx={{ color: "white", fontSize: 36, fontWeight: 700 }}>
                   Shimabu IT University

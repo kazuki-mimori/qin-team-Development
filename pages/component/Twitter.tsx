@@ -7,9 +7,9 @@ function Twitter() {
     <>
       <Container my="xl">
         <div className="mt-px">
-          <div>
-            <Text className="text-3xl">Twitter</Text>
-          </div>
+          <Text className="text-3xl ">Twitter</Text>
+          <Space h="xl" />
+          <div className="border-b-2 divide-gray-200 ..." />
           <div className="my-6">
             <Text className="text-1xl">This is a header</Text>
             <Space h="xs" />
