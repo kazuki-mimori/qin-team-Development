@@ -1,6 +1,11 @@
 import { Container, Text, Space, Button } from "@mantine/core";
 
 function Blog() {
+  interface BlogContent {
+    title: string;
+    description: string;
+    date: Number;
+  }
   const BlogContent = [
     {
       title: "This is a header",

@@ -37,27 +37,11 @@ function HeaderArea() {
           <Text sx={{ color: "brack", fontSize: 18, fontWeight: 700 }}>
             Shimabu IT University
           </Text>
-          <Group spacing={20}>
-            <Link href="/About">
-              <Text sx={{ color: "brack", fontSize: 18, fontWeight: 700 }}>
-                About
-              </Text>
-            </Link>
-            <Link href="/Blog">
-              <Text sx={{ color: "brack", fontSize: 18, fontWeight: 700 }}>
-                Blog
-              </Text>
-            </Link>
-            <Link href="Portfolio">
-              <Text sx={{ color: "brack", fontSize: 18, fontWeight: 700 }}>
-                Portfolio
-              </Text>
-            </Link>
-            <Link href="Contact">
-              <Text sx={{ color: "brack", fontSize: 18, fontWeight: 700 }}>
-                Contact
-              </Text>
-            </Link>
+          <Group spacing={20} className="sm:hidde text-lg font-bold text-xs  n">
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
           </Group>
           <Burger
             opened={opened}
