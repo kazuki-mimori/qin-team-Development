@@ -37,11 +37,19 @@ function HeaderArea() {
           <Text sx={{ color: "brack", fontSize: 18, fontWeight: 700 }}>
             Shimabu IT University
           </Text>
-          <Group spacing={20} className="sm:hidde text-lg font-bold text-xs  n">
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+          <Group className="font-bold text-lg invisible sm:visible">
+            <Link href="#">
+              <a className="">About</a>
+            </Link>
+            <Link href="#">
+              <a className="">Blog</a>
+            </Link>
+            <Link href="#">
+              <a className="">Portfolio</a>
+            </Link>
+            <Link href="#">
+              <a className="">Contact</a>
+            </Link>
           </Group>
           <Burger
             opened={opened}
@@ -50,7 +58,7 @@ function HeaderArea() {
             size="sm"
           />
         </Container>
-        <div className="bg-pink-600  ">
+        <div className="bg-pink-600">
           <Container my="sm">
             <Grid>
               <Grid.Col xs={10}>
