@@ -58,7 +58,7 @@ function HeaderArea() {
             size="sm"
           />
         </Container>
-        <div className="bg-pink-600">
+        <div className="bg-pink-600 h-44 sm:h-36">
           <Container my="sm">
             <Grid>
               <Grid.Col xs={10}>
@@ -71,7 +71,7 @@ function HeaderArea() {
                 </Text>
                 <Space h="xl" />
               </Grid.Col>
-              <Group spacing={20}>
+              <Group spacing={20} className="">
                 <Link href="/About">
                   <svg
                     width="21"

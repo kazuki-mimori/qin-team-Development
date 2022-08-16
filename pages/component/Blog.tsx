@@ -1,4 +1,4 @@
-import { Container, Text, Space, Button } from "@mantine/core";
+import { Container, Text, Space, Button, Group } from "@mantine/core";
 
 function Blog() {
   interface BlogContent {
@@ -41,10 +41,12 @@ function Blog() {
               );
             })}
           </div>
-          <Button className="" color="dark" radius="xl" size="md">
-            View Al
-          </Button>
         </div>
+        <Group position="center">
+          <button className="bg-black text-white rounded-full py-2 px-4">
+            View All
+          </button>
+        </Group>
       </Container>
     </>
   );
