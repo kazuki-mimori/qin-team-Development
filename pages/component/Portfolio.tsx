@@ -1,11 +1,20 @@
-import { Text, SimpleGrid, Container, Card, Image, Space } from "@mantine/core";
+import {
+  Text,
+  SimpleGrid,
+  Container,
+  Card,
+  Image,
+  Space,
+  Group,
+} from "@mantine/core";
 
 const PORTFOLIO = [
   {
     title: "IT KINGDOM",
     description:
       "当サロンのLPページ。React、Next.js、TypeScriptなどのモダンな技術を用いて作られています。初心者にちょうど良い難易度の制作物です。",
-    image: "",
+    image:
+      "https://cdn.pixabay.com/photo/2022/07/30/14/07/butterfly-7353884_1280.jpg",
     date: "2020.07.11",
   },
   {
@@ -68,6 +77,11 @@ export function Portfolio() {
           {items}
         </SimpleGrid>
       </Container>
+      <Group position="center">
+        <button className="bg-black text-white rounded-full py-2 px-4">
+          View All
+        </button>
+      </Group>
     </>
   );
 }

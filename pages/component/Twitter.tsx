@@ -8,13 +8,11 @@ import {
 } from "@mantine/core";
 
 function Twitter() {
-  const theme = useMantineTheme();
-
   return (
     <>
       <Container my="xl">
         <div className="mt-px">
-          <Text className="text-3xl ">Twitter</Text>
+          <Text className="text-3xl">Twitter</Text>
           <Space h="xl" />
           <div className="border-b-2 divide-gray-200 ..." />
           <div className="my-6">
@@ -40,7 +38,7 @@ function Twitter() {
             </Group>
           </div>
 
-          <Space h="xs" />
+          <Space h="xl" />
           <Group position="center">
             <button className="bg-black text-white rounded-full py-2 px-4">
               View on Twitter

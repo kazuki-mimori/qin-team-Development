@@ -37,6 +37,7 @@ function Blog() {
                   <Space h="xs" />
                   <p>{content.content}</p>
                   <p>{content.date}</p>
+                  <Space h="xl" />
                 </>
               );
             })}

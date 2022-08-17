@@ -1,10 +1,8 @@
 import {
   Container,
   Text,
-  Button,
   Space,
   Group,
-  Avatar,
   ActionIcon,
   List,
   Progress,
@@ -14,17 +12,22 @@ import { TbGitFork } from "react-icons/tb";
 function Github() {
   return (
     <>
-      <Container my="xl">
-        <div className="mt-px">
-          <Text className="text-3xl">Github</Text>
+      <div className="mt-px">
+        <Container my="xl">
+          <Text className="text-3xl ">Github</Text>
           <Space h="xl" />
           <div className="border-b-2 divide-gray-200 ..." />
           <div className="my-6">
-            <Group>
+            <h3 className="text-lg">lightsound/nexst-tailwind</h3>
+            <p className="text-base font-extralight">
+              Next.js starter template.
+            </p>
+
+            <Group spacing="sm">
               <ActionIcon size="lg">
-                <FaRegStar className="mr-1" />
+                <FaRegStar className="ml-1" />
               </ActionIcon>
-              <p>117</p>
+              <p className="mr-10">117</p>
               <ActionIcon size="lg">
                 <TbGitFork className="mr-1" />
               </ActionIcon>
@@ -50,14 +53,14 @@ function Github() {
             </Text>
           </List>
 
-          <Space h="xs" />
+          <Space h="xl" />
           <Group position="center">
             <button className="bg-black text-white rounded-full py-2 px-4">
               View on Github
             </button>
           </Group>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </>
   );
 }
