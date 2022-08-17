@@ -1,4 +1,4 @@
-import { Container, Grid, Space } from "@mantine/core";
+import { Container, Grid, SimpleGrid, Space } from "@mantine/core";
 import Blog from "./component/Blog";
 import FooterArea from "./component/FooterArea";
 import Github from "./component/Github";
@@ -14,14 +14,22 @@ function Index() {
       <Blog />
       <Portfolio />
       <Container my="xl">
-        <Grid grow>
+        <SimpleGrid
+          cols={2}
+          breakpoints={[{ maxWidth: "sm", cols: 1 }]}
+          spacing={50}
+        >
+          <Github />
+          <Twitter />
+        </SimpleGrid>
+        {/* <Grid grow>
           <Grid.Col span={4}>
-            <Github />
+         
           </Grid.Col>
           <Grid.Col span={4}>
-            <Twitter />
+            
           </Grid.Col>
-        </Grid>
+        </Grid> */}
       </Container>
       <FooterArea />
     </>

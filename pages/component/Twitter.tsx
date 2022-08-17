@@ -3,7 +3,6 @@ import {
   useMantineTheme,
   Text,
   Space,
-  Button,
   Group,
   Avatar,
 } from "@mantine/core";
