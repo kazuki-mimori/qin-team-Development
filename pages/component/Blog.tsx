@@ -24,7 +24,7 @@ function Blog() {
     <>
       <Container my="xl">
         <Space h="xl" />
-        <div className="mt-p ">
+        <div className="">
           <Text className="text-3xl">Blog</Text>
           <Space h="xl" />
           <div className=" border-b-2 divide-gray-200 ..." />

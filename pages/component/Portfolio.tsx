@@ -1,5 +1,4 @@
 import { Text, SimpleGrid, Container, Card, Image, Space } from "@mantine/core";
-import { TablerIcon } from "@tabler/icons";
 
 const PORTFOLIO = [
   {
@@ -29,24 +28,25 @@ const PORTFOLIO = [
 
 interface PORTFOLIO {
   title: string;
+  image: any;
   description: string;
   date: string;
 }
-function Feature({ title, description, date, ...others }: PORTFOLIO) {
+
+function Feature({ title, description, image, date }: PORTFOLIO) {
   return (
     <Card shadow="sm" p="xl" component="a" href="" target="_blank">
       <Card.Section>
-        <Image src={""} height={160} alt="No way!" />
+        <Image src={image} height={160} alt="No way!" />
       </Card.Section>
       <Text className="my-2" weight={500} size="xl" mt="md">
-        テスト
+        {title}
       </Text>
       <Text mt="xm" color="dimmed" size="sm">
-        {/* {content.description} */}
-        テスト
+        {description}
       </Text>
       <Text mt="xs" color="dimmed" size="sm">
-        2021.10 - 2021.12
+        {date}
       </Text>
     </Card>
   );
@@ -54,10 +54,9 @@ function Feature({ title, description, date, ...others }: PORTFOLIO) {
 
 export function Portfolio() {
   const items = PORTFOLIO.map((item) => <Feature {...item} key={item.title} />);
-
   return (
     <>
-      <Container mt={30} mb={30} size="lg">
+      <Container my="xl">
         <Text className="text-3xl">Portfolio</Text>
         <Space h="xl" />
         <div className="text-3xl border-b-2 divide-gray-200 ... mb-10" />
@@ -72,51 +71,3 @@ export function Portfolio() {
     </>
   );
 }
-
-//   return (
-//     <>
-//       <Container my="xl">
-//         <div className="mt-px">
-//
-//           <div className="my-6">
-//             <Grid>
-//               {PORTFOLIO.map((content: any) => {
-//                 return (
-//                   <Grid.Col span={4}>
-//                     <Card
-//                       shadow="sm"
-//                       p="xl"
-//                       component="a"
-//                       href=""
-//                       target="_blank"
-//                     >
-//                       <Card.Section>
-//                         <Image src={content.image} height={160} alt="No way!" />
-//                       </Card.Section>
-//                       <Text className="my-2" weight={500} size="xl" mt="md">
-//                         {content.title}
-//                       </Text>
-//                       <Text mt="xm" color="dimmed" size="sm">
-//                         {content.description}
-//                       </Text>
-//                       <Text mt="xs" color="dimmed" size="sm">
-//                         2021.10 - 2021.12
-//                       </Text>
-//                     </Card>
-//                   </Grid.Col>
-//                 );
-//               })}
-//             </Grid>
-//           </div>
-//         </div>
-//         <Space h="xl" />
-//         <Group position="center">
-//           <button className="bg-black text-white rounded-full py-2 px-4">
-//             View All
-//           </button>
-//         </Group>
-//       </Container>
-
-//     </>
-//   );
-// }
