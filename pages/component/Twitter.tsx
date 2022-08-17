@@ -1,13 +1,34 @@
-import {
-  Container,
-  useMantineTheme,
-  Text,
-  Space,
-  Group,
-  Avatar,
-} from "@mantine/core";
+import { Container, Text, Space, Group, Avatar } from "@mantine/core";
 
 function Twitter() {
+  interface TeitterContent {
+    title: string;
+    account: string;
+    description: string;
+    date: Number;
+  }
+
+  const BlogContent = [
+    {
+      title: "しまぶーのIT大学",
+      account: "@shimabu_it・5月25日",
+      description:
+        " 📣 新サービス「Noway Form」をリリースしました！ NowayFormは、Notionのデータベースをもとにフォームを作成できるサービスです。これまでGoogleFormsでやっていたことがNotionだけで完結します✌✨試しに使っていただけると幸いです😊https://www.noway-form.com/ja",
+    },
+    {
+      title: "しまぶーのIT大学",
+      account: "@shimabu_it・5月25日",
+      description:
+        " 📣 新サービス「Noway Form」をリリースしました！ NowayFormは、Notionのデータベースをもとにフォームを作成できるサービスです。これまでGoogleFormsでやっていたことがNotionだけで完結します✌✨試しに使っていただけると幸いです😊https://www.noway-form.com/ja",
+    },
+    {
+      title: "しまぶーのIT大学",
+      account: "@shimabu_it・5月25日",
+      description:
+        " 📣 新サービス「Noway Form」をリリースしました！ NowayFormは、Notionのデータベースをもとにフォームを作成できるサービスです。これまでGoogleFormsでやっていたことがNotionだけで完結します✌✨試しに使っていただけると幸いです😊https://www.noway-form.com/ja",
+    },
+  ];
+
   return (
     <>
       <Container my="xl">
@@ -16,26 +37,26 @@ function Twitter() {
           <Space h="xl" />
           <div className="border-b-2 divide-gray-200 ..." />
           <div className="my-6">
-            <Group>
-              <Avatar className="mb-32" src="" radius="xl" />
-              <div style={{ flex: 1 }}>
-                <Group>
-                  <Text size="sm" weight={500}>
-                    しまぶーのIT大学
-                  </Text>
-                  <Text color="dimmed" size="xs">
-                    @shimabu_it・5月25日
-                  </Text>
-                </Group>
-                <p>
-                  📣 新サービス「Noway Form」をリリースしました！ Noway
-                  Formは、Notionのデータベースをもとにフォームを作成できるサービスです。これまでGoogle
-                  FormsでやっていたことがNotionだけで完結します✌✨
-                  試しに使っていただけると幸いです😊
-                  https://www.noway-form.com/ja
-                </p>
-              </div>
-            </Group>
+            {BlogContent.map((content: any) => {
+              return (
+                <>
+                  <Group className="mb-10">
+                    <Avatar className="mb-32" src="" radius="xl" />
+                    <div style={{ flex: 1 }}>
+                      <Group>
+                        <Text size="sm" weight={500}>
+                          {content?.title}
+                        </Text>
+                        <Text color="dimmed" size="xs">
+                          {content?.account}
+                        </Text>
+                      </Group>
+                      <p>{content?.description}</p>
+                    </div>
+                  </Group>
+                </>
+              );
+            })}
           </div>
 
           <Space h="xl" />

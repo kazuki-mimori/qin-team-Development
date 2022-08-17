@@ -1,4 +1,4 @@
-import { Container, Text, Space, Button, Group } from "@mantine/core";
+import { Container, Text, Space, Group } from "@mantine/core";
 
 function Blog() {
   interface BlogContent {
