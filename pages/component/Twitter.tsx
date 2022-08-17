@@ -8,7 +8,7 @@ function Twitter() {
     date: Number;
   }
 
-  const BlogContent = [
+  const TeitterContent = [
     {
       title: "しまぶーのIT大学",
       account: "@shimabu_it・5月25日",
@@ -37,7 +37,7 @@ function Twitter() {
           <Space h="xl" />
           <div className="border-b-2 divide-gray-200 ..." />
           <div className="my-6">
-            {BlogContent.map((content: any) => {
+            {TeitterContent.map((content: any) => {
               return (
                 <>
                   <Group className="mb-10">
