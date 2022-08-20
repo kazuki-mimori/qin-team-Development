@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/diqzTcG5h-7XrV38aqJQ-/_buildManifest.js",
-    "static/diqzTcG5h-7XrV38aqJQ-/_ssgManifest.js"
+    "static/JBz4YI47HKI_XiqgZJUnD/_buildManifest.js",
+    "static/JBz4YI47HKI_XiqgZJUnD/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -20,13 +20,13 @@
       "static/chunks/892-f566e81d99aafb32.js",
       "static/chunks/987-c979470b146ac141.js",
       "static/chunks/505-1c0c2d049fd9f8c1.js",
-      "static/chunks/pages/index-fc9de6be3e66cfcb.js"
+      "static/chunks/pages/index-3a8f7d6123e114a7.js"
     ],
     "/_app": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
       "static/chunks/framework-a87821de553db91d.js",
       "static/chunks/main-c354a30bda3d62a6.js",
-      "static/css/071c1fb2d657aa12.css",
+      "static/css/02bf09c0575825ef.css",
       "static/chunks/pages/_app-18df381f35433311.js"
     ],
     "/_error": [
@@ -73,7 +73,7 @@
       "static/chunks/main-c354a30bda3d62a6.js",
       "static/chunks/777-8259f5a945bd94e5.js",
       "static/chunks/505-1c0c2d049fd9f8c1.js",
-      "static/chunks/pages/component/Portfolio-c01c6ed4ae30d71f.js"
+      "static/chunks/pages/component/Portfolio-30d6780b4e62d01d.js"
     ],
     "/component/Twitter": [
       "static/chunks/webpack-fd1bc4a65a80e5c8.js",
