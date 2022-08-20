@@ -3,7 +3,7 @@ import Blog from "./component/Blog";
 import FooterArea from "./component/FooterArea";
 import Github from "./component/Github";
 import HeaderArea from "./component/Header";
-import { Portfolio } from "./component/Portfolio";
+import Portfolio from "./component/Portfolio";
 import Twitter from "./component/Twitter";
 
 function Index() {
