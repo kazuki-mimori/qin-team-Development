@@ -60,8 +60,7 @@ function Feature({ title, description, image, date }: PORTFOLIO) {
     </Card>
   );
 }
-
-export function Portfolio() {
+function Portfolio() {
   const items = PORTFOLIO.map((item) => <Feature {...item} key={item.title} />);
   return (
     <>
@@ -85,3 +84,5 @@ export function Portfolio() {
     </>
   );
 }
+
+export default Portfolio;

@@ -10,6 +10,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import Link from "next/link";
+import { useState } from "react";
 
 const useStyles = createStyles((theme) => ({
   header: {
@@ -27,7 +28,8 @@ const useStyles = createStyles((theme) => ({
 }));
 
 function HeaderArea() {
-  const [opened, { toggle }] = useDisclosure(false);
+  const [opened, setOpened] = useState(false);
+  const title = opened ? "Close navigation" : "Open navigation";
   const { classes } = useStyles();
 
   return (
@@ -53,7 +55,8 @@ function HeaderArea() {
           </Group>
           <Burger
             opened={opened}
-            onClick={toggle}
+            onClick={() => setOpened((o) => !o)}
+            title={title}
             className={classes.burger}
             size="sm"
           />
