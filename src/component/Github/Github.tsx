@@ -9,6 +9,8 @@ import {
 } from "@mantine/core";
 import { FaRegStar } from "react-icons/fa";
 import { TbGitFork } from "react-icons/tb";
+import Button from "../Button";
+import Title from "../Title";
 function Github() {
   interface GithubContent {
     title: string;
@@ -45,11 +47,9 @@ function Github() {
 
   return (
     <>
-      <div className="mt-px">
+      <div className="mt-px" id="Contact">
         <Container my="xl">
-          <Text className="text-3xl ">Github</Text>
-          <Space h="xl" />
-          <div className="border-b-2 divide-gray-200 ..." />
+          <Title title="Github" />
           <div className="my-6">
             {GithubContent.map((content: any) => {
               return (
@@ -90,11 +90,7 @@ function Github() {
           </div>
 
           <Space h="xl" />
-          <Group position="center">
-            <button className="bg-black text-white rounded-full py-2 px-4">
-              View on Github
-            </button>
-          </Group>
+          <Button title="View on GitHub" link="Github" />
         </Container>
       </div>
     </>

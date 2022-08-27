@@ -1,12 +1,6 @@
-import {
-  Text,
-  SimpleGrid,
-  Container,
-  Card,
-  Image,
-  Space,
-  Group,
-} from "@mantine/core";
+import { Text, SimpleGrid, Container, Card, Image } from "@mantine/core";
+import Button from "../Button";
+import Title from "../Title";
 
 const PORTFOLIO = [
   {
@@ -64,23 +58,18 @@ function Portfolio() {
   const items = PORTFOLIO.map((item) => <Feature {...item} key={item.title} />);
   return (
     <>
-      <Container my="xl">
-        <Text className="text-3xl">Portfolio</Text>
-        <Space h="xl" />
-        <div className="text-3xl border-b-2 divide-gray-200 ... mb-10" />
+      <Container my="xl" id="Portfolio">
+        <Title title="Portfolio" />
         <SimpleGrid
           cols={3}
           breakpoints={[{ maxWidth: "sm", cols: 1 }]}
           spacing={50}
+          className="my-6"
         >
           {items}
         </SimpleGrid>
       </Container>
-      <Group position="center">
-        <button className="bg-black text-white rounded-full py-2 px-4">
-          View All
-        </button>
-      </Group>
+      <Button title="View All" link="Portfolio" />
     </>
   );
 }

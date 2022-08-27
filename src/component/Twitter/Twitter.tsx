@@ -1,4 +1,6 @@
 import { Container, Text, Space, Group, Avatar } from "@mantine/core";
+import Button from "../Button";
+import Title from "../Title";
 
 function Twitter() {
   interface TeitterContent {
@@ -33,9 +35,7 @@ function Twitter() {
     <>
       <Container my="xl">
         <div className="mt-px">
-          <Text className="text-3xl">Twitter</Text>
-          <Space h="xl" />
-          <div className="border-b-2 divide-gray-200 ..." />
+          <Title title="Twitter" />
           <div className="my-6">
             {TeitterContent.map((content: any) => {
               return (
@@ -60,11 +60,7 @@ function Twitter() {
           </div>
 
           <Space h="xl" />
-          <Group position="center">
-            <button className="bg-black text-white rounded-full py-2 px-4">
-              View on Twitter
-            </button>
-          </Group>
+          <Button title="View on Twitter " link="Twitter" />
         </div>
       </Container>
     </>
